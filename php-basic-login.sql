@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS`php-basic-login`;
+USE `php-basic-login`;
+
+CREATE TABLE IF NOT EXISTS `users` (
+	usersID INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    usersName VARCHAR(128) NOT NULL,
+    usersEmail VARCHAR(128) NOT NULL,
+    usersUID VARCHAR(128) NOT NULL,
+    usersPWD VARCHAR(128) NOT NULL
+);
+
+
+SELECT * FROM `users`;
+
+#DROP TABLE `users`;
