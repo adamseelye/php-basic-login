@@ -10,4 +10,4 @@ server-side functions such as creating and logging users in, creating user sessi
 
 ### Installation and startup instructions are contained within STARTUP.md.
 
-## Thanks for stopping by !
+## Thanks for stopping by, enjoy !
