@@ -1,0 +1,21 @@
+server {
+	listen 80 default_server;
+	root /var/www/php-basic-login;
+
+	index index.html index.php;
+
+	server_name php-basic-login;
+
+	location / {
+		# First attempt to serve request as file, then
+		# as directory, then fall back to displaying a 404.
+		try_files $uri $uri/ =404;
+	}
+
+	# pass PHP scripts to FastCGI server
+	location ~ \.php$ {
+		include snippets/fastcgi-php.conf;
+		fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+	}
+}
+
