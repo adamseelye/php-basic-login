@@ -8,8 +8,3 @@ CREATE TABLE IF NOT EXISTS `users` (
     usersUID VARCHAR(128) NOT NULL,
     usersPWD VARCHAR(128) NOT NULL
 );
-
-
-SELECT * FROM `users`;
-
-#DROP TABLE `users`;
