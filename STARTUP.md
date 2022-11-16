@@ -80,7 +80,9 @@ Switching to root will save us some time:
 Under the section "Virtual Host Configs", add the line
 - include /etc/nginx/sites-enabled/php-basic-login
 
-Add the site configuration:
+Save and quit.
+
+Add the site configuration and create a symbolic link in enabled sites directory:
 - #: cd /etc/nginx/sites-available
 - #: cp /var/www/php-basic-login/php-basic-login.nginx .
 - #: mv php-basic-login.nginx php-basic-login
