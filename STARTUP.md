@@ -27,6 +27,13 @@ Move the folder into /var/www/, change folder ownership.
 - $: sudo mv ~/php-basic-login /var/www/
 - $: sudo chown -R USER:USER /var/www/php-basic-login
 
+Next, we'll set up the database handler.
+The handler requires four variables: Database IP address, username, password, and schema.
+Insert your own credentials; none are supplied from the repo
+- $: cd /var/www/php-basic-login/includes
+- mv dbh.inc.php.copy dbh.inc.php
+- Now, edit the file with your favorite text editor and insert your credentials.
+
 Start nginx, enable on boot:
 - $: sudo systemctl enable nginx
 - $: sudo systemctl start nginx
