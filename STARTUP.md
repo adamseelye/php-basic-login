@@ -45,10 +45,10 @@ Install MySQL:
 
 Connect to MySQL instance as root to create a user and grant permissions to database:
 - $: mysql -u root -p
-- ** To connect to a remote host, use -h option: mysql -u root -p -h IPADDRESS
+- **To connect to a remote host, use -h option: mysql -u root -p -h IPADDRESS**
 
 - mysql> CREATE USER 'USER'@'IPADDRESS' IDENTIFIED BY 'PASSWORD';
-- ** substitute with your own credentials but be sure to include single quotes
+- **substitute with your own credentials but be sure to include single quotes**
 - mysql> GRANT ALL ON php-basic-login.* TO 'USER'@'IPADDRESS';
 - mysql> FLUSH PRIVILEGES;
 - mysql> exit
