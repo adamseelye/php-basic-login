@@ -80,6 +80,9 @@ Add the site configuration:
 - #: cd /etc/nginx/sites-enabled
 - #: ln -s /etc/nginx/sites-available/php-basic-login /etc/nginx/sites-enabled/php-basic-login
 
+Reboot the system.
+- #: reboot
+
 And that should be it!
 To test, first navigate to the site in your favorite web browser. Click on the "Sign Up" link.
 Enter all relevant information and keep in mind that only valid email address formats may be used.
