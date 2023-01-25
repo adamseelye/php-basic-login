@@ -24,7 +24,7 @@
             } else if ($_GET["error"] == "stmtfailed") {
                 echo "<p>Database error</p>";
             } else if ($_GET["error"] == "none") {
-                echo "<p>You have successfully signed up! Noice!</p>";
+                echo "<p>You have successfully logged! Noice!</p>";
             }
         }
         ?>
