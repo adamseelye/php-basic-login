@@ -6,6 +6,7 @@
 
 It is not necessary to run any of the following commands as root; only a user with sudo permissions is required.
 First things first, let's do a good old-fashioned system upgrade:
+- sudo apt update
 - sudo apt upgrade
 
 We'll begin by installing some packages.
@@ -78,7 +79,7 @@ Switching to root will save us some time:
 - #: vim nginx.conf
 
 Under the section "Virtual Host Configs", add the line
-- include /etc/nginx/sites-enabled/php-basic-login
+- include /etc/nginx/sites-enabled/php-basic-login;
 
 Save and quit.
 
